@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wordstep{
+            position: absolute;
+            top: 30%;
+            left: 25%;
+            font-size: 30px;
+            color:white;
+        }
+
+        .cssload-container {
+            width: 100%;
+            height: 49px;
+            text-align: center;
+
+        }
+
+        .cssload-speeding-wheel {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border: 6px solid rgb(6, 3, 74);
+            border-radius: 50%;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            animation: cssload-spin 2000ms infinite linear;
+            -o-animation: cssload-spin 2000ms infinite linear;
+            -ms-animation: cssload-spin 2000ms infinite linear;
+            -webkit-animation: cssload-spin 2000ms infinite linear;
+            -moz-animation: cssload-spin 2000ms infinite linear;
+        }
+
+        .step1 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(3, 38, 215);
+            border-radius: 50%;
+            transform: none;
+            text-align: center;
+            float: left;;
+        }
+
+        @keyframes cssload-spin {
+            100% {
+                transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-o-keyframes cssload-spin {
+            100% {
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-ms-keyframes cssload-spin {
+            100% {
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes cssload-spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes cssload-spin {
+            100% {
+                -moz-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        .wrap{
+            position: relative;
+        }
+        .step{
+            position: absolute;
+            top:6px;
+            left:6px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(7, 7, 201);
+            border-radius: 50%;
+            transform: none;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        
+        <div class="cssload-container">
+            <div class="wrap">
+                <div class="cssload-speeding-wheel"></div>
+                <div class="step">
+                    <div class="wordstep">step</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

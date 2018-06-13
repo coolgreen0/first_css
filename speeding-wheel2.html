@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap {
+            position: relative;
+        }
+
+        .step {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border-radius: 50%;
+            transform: none;
+            text-align: center;
+        }
+
+        .wordstep{
+            position: absolute;
+            top: 30%;
+            left: 25%;
+            font-size: 30px;
+            color:white;
+        }
+
+        .cssload-container {
+            width: 100%;
+            height: 49px;
+            text-align: center;
+        }
+
+        .cssload-zenith {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border-radius: 50%;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            box-shadow: 3px 3px 1px rgb(0, 0, 0);
+            animation: cssload-spin 690ms infinite linear;
+            -o-animation: cssload-spin 690ms infinite linear;
+            -ms-animation: cssload-spin 690ms infinite linear;
+            -webkit-animation: cssload-spin 690ms infinite linear;
+            -moz-animation: cssload-spin 690ms infinite linear;
+        }
+
+
+
+        @keyframes cssload-spin {
+            100% {
+                transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-o-keyframes cssload-spin {
+            100% {
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-ms-keyframes cssload-spin {
+            100% {
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes cssload-spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes cssload-spin {
+            100% {
+                -moz-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cssload-container">
+        <div class="wrap">
+            <div class="step">step</div>
+            <div class="cssload-zenith"></div>
+        </div>
+    </div>
+</body>
+
+</html>
