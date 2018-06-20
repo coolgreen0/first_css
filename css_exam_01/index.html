@@ -68,21 +68,61 @@
             position:fixed;
             top: -50px;
             width: 100%;
-            transition: top 0.9s;
+            text-align: center;
+            transition: top 0.4s;
+        }
+
+        .fixednavWarp ul li{
+            display: inline-block;
         }
 
         .fixednav a {
             float:left;
-            display: block;
             color: white;
             text-align: center;
             padding: 15px;
             text-decoration: none;
         }
 
-        .fixednav a:hover {
-            background: #dddddd;
+        .fixednav ul li>a:hover .fixedhover{
+            display: block;
+        }
+
+        .fixedhover{
+            display: none;
+            padding: 0;
+            clear: both;
+            height: 100px;
+            background: powderblue;
+        }
+
+        .fixedhover a {
+            float:left;
+            font-size: 20px;
+        }
+
+        .fixednav a:hover{
             color: black;
+            background: white;
+        }
+
+
+
+        .onedepth {
+            display: none;
+            background: #333333;
+            /*position:fixed;*/
+            float:left;
+            top: 150px;
+            width: 100%;
+        }
+
+        .onedepth a {
+            font-size: 100px;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
         }
 
         .header {
@@ -141,6 +181,11 @@
         .nav > li > a {
             font-size: 15px;
             display: inline-block;
+            background: #dddddd;
+        }
+        
+        .item1:hover {
+            background:blue;
         }
 
         .item5 {
@@ -155,12 +200,27 @@
     </style>
 
     <div class="fixednav">
-        <a href="">test 1</a>
-        <a href="">test 2</a>
-        <a href="">test 3</a>
-        <a href="">test 4</a>
-        <a href="">test 5</a>
+        <div class="fixednavWarp">
+            <ul>
+                <li><a href="">test 1</a></li>
+                <li><a href="">test 2</a></li>
+                <li><a href="">test 3</a></li>
+                <li><a href="">test 4</a></li>
+                <li><a href="">test 5</a></li>
+            </ul>
+        </div>
+        <div class="fixedhover">
+            <ul>
+                <li><a href="">alpha</a></li>
+                <li><a href="">bravo</a></li>
+                <li><a href="">chalie?</a></li>
+                <li><a href="">dnunmola</a></li>
+                <li><a href="">econa?</a></li>
+            </ul>
+        </div>
     </div>
+
+
 
     <div class="header">
         <div class="logo"><a>이렇게하면?</a></div>
@@ -183,6 +243,14 @@
         </ul>
         <div class="test3"></div>
         <div class="clearfix"></div>
+
+        <div class="onedepth">
+                <a href="">100000</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+        </div>
     </div>
     <div class="section">
         <div class="article">
