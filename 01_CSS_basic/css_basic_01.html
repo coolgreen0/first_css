@@ -177,5 +177,56 @@
         <li>six</li>
         <li>seven</li>
     </ul>
+    <style>
+        .alpha h1:first-of-type {
+            color:blue;
+        }
+
+        .alpha h2:first-of-type {
+            color:blue;
+        }
+
+        .alpha h3:first-of-type {
+            color:blue;
+        }
+    </style>
+    <div class="alpha">
+        <h1>header-1</h1>
+        <h2>header-2</h2>
+        <h3>header-3</h3>
+        <h3>header-3</h3>
+        <h2>header-2</h2>
+        <h1>header-1</h1>
+    </div>
+    <style>
+        p::first-letter {
+            font-size: 3em;
+        }
+        p::first-line {
+            color:red;
+        }
+    </style>
+    <h1>orem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <p>Ratione eum neque aut sed ipsa? Labore, soluta. <br/>
+        Rem aliquid a placeat nulla similique cupiditate, <br/>
+        hic est consectetur dolorum quis non quam eum architecto</p> 
+    <p>cumque at, fuga provident quasi? Sit, ex molestiae? <br/>
+        Voluptas nemo adipisci fugit similique optio voluptates <br/>
+        laboriosam ipsa quam?</p>
+
+    <style>
+        /* inline의 은 width, height 속성 불가.
+        margin의 경우 좌우만 설정가능. 
+        inline-block의 경우... 가능.
+        block의 라인 전체를 먹는다.
+        */
+        #box{
+            display: inline-block;
+            background: ivory;
+        }
+    </style>
+    <span>dummy</span>
+    <div id="box">Lorem ipsum dolor sitadipisicing elit. Earum, doloribus?</div>
+    <span>dummy</span>
 </body>
 </html>
