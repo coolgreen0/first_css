@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        div.alpha {
+            /* 부모의 공간을 잡아준다. 필요한건 width, height */
+            height: 200px;
+            width: 500px;
+            border: solid 2px black;
+
+            /* 자식들의 기준점을 잡는다. */
+            position:relative;
+        }
+       .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .box:nth-child(1){ 
+            background: red; 
+            left: 10px;
+            top: 10px;
+            z-index: 100;
+            }
+        
+        .box:nth-child(2){ 
+            background: blue;
+            left: 50px;
+            top: 50px;
+            z-index: 10;
+            }
+        
+        .box:nth-child(3){ 
+            background: yellow;
+            left: 90px;
+            top: 90px;
+            z-index: 1;
+            }
+        
+        .box2Wrap {
+            background: yellow;
+        }
+
+        .box2Wrap::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background: blueviolet;
+            float: left;
+            border: solid 2px black;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h1>
+    <div class="alpha">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+
+    <div class="box2Wrap">
+        <div class="box2">1</div>
+        <div class="box2">2</div>
+        <div class="box2">3</div>
+        <div class="clear"></div>
+    </div>
+
+</body>
+</html>

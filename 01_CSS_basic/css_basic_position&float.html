@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .font_big { font-size: 2em ;}
+        .font_italic { font-style: italic ;}
+        .font_bold { font-weight: bold;}
+        .font_center { text-align: center;}
+        .font_deco_off { text-decoration: none;}
+
+        .button {
+            width: 150px;
+            height: 70px;
+            background: #c4c4c4;
+            border: 10px solid black;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px #a9a9a9;
+            line-height: 70px;
+        }
+
+        .button > a {
+            display: block;
+        }
+        
+        /* position 속성을 알아봅니다. */
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .box:nth-child(1){ 
+            background: red; 
+            left: 10px;
+            top: 10px;
+            z-index: 100;
+            }
+        
+        .box:nth-child(2){ 
+            background: blue;
+            left: 50px;
+            top: 50px;
+            z-index: 10;
+            }
+        
+        .box:nth-child(3){ 
+            background: yellow;
+            left: 90px;
+            top: 90px;
+            z-index: 1;
+            }
+
+    </style>
+</head>
+<body>
+    <!--
+    <div class="button">
+        <a class="font_big font_italic font_bold font_center font_deco_off" href="">click</a>
+    </div>
+    span tag의 경우에는 inline 요소기 때문에 중앙정렬이 안된다. 영역이 자기 글자까지만 포함하기 때문에.
+    <span class="font_center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+    p tag의 경우에는 block 요소기 때문에 정렬이 가능하다. 
+    <p class="font_center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    -->
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
